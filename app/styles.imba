@@ -371,3 +371,7 @@ global css
 				.swiper-horizontal > .swiper-pagination-bullets b:-4.5rem
 				.contact-form w:460px
 				.contact-inputs gtc:repeat(2, 1fr)
+			
+			@1280
+				.container max-width:1024px
+				.services-container cg:5rem
