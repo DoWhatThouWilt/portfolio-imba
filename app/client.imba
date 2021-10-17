@@ -147,7 +147,7 @@ tag app
 									<i.uil.uil-dribbble>
 								<a.home-social-icon>
 									<i.uil.uil-github-alt>
-							<div.home-img [pos:relative]>
+							<div.home-img>
 								<svg.home-blob viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									<mask id="mask0" mask-type="alpha">
 											<path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 

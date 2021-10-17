@@ -2,7 +2,7 @@
   "name": "portfolio",
   "scripts": {
     "start": "imba -w server.imba",
-    "build": "imba build server.imba"
+    "build": "sh ./build.sh"
   },
   "dependencies": {
     "express": "^4.17.1",
