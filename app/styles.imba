@@ -8,6 +8,7 @@ global css
 		$container-color: hsl($hue-color, 29%, 16%)
 		$scroll-bar-color: hsl($hue-color, 12%, 48%)
 		$scroll-thumb-color: hsl($hue-color, 12%, 33%) 
+		$square-color: gray8
 
 	
 	@root[data-theme="light"]
@@ -17,6 +18,7 @@ global css
 		$input-color: hsl($hue-color, 70%, 96%)	
 		$body-color: hsl($hue-color, 60%, 99%)	
 		$container-color: white
+		$square-color: gray2
 
 	@root
 		# Button Dark/Light
@@ -92,6 +94,7 @@ global css
 			zi:100
 			bgc:$body-color
 			
+
 		# Navigation
 		.nav
 			max-width:968px
@@ -142,7 +145,7 @@ global css
 		.home-social d:grid gtc:max-content rg:1.5rem
 		.home-social-icon fs:1.25rem c:$color-1
 		.home-social-icon@hover c:$color-1-alt
-		.home-blob w:200px fill:$color-1
+		.home-blob w:200px # fill:$color-1
 		.home-blob-img w:170px
 		.home-data gcs:1 gce:3
 		.home-title fs:$lg-fs
@@ -157,7 +160,7 @@ global css
 		
 
 		# Buttons
-		.button d:inline-block bgc:$color-1 c:white p:4 rd:.5rem fw:500 cursor:pointer
+		.button d:inline-block bgc:$color-1 c:white p:4 rd:.5rem fw:500 cursor:pointer fs:$normal-fs
 		.button@hover bgc:$color-1-alt
 		.button-icon fs:1.25rem ml:2 tween:transform .3s
 		.button-white bgc:white c:$color-1 tween:colors .3s
@@ -196,6 +199,7 @@ global css
 		.skills-open .skills-list h:200px mb:10
 		.skills-open .skills-arrow transform:rotate(-180deg)
 		
+
 		# Qualification
 		.qualification-tabs d:flex jc:space-evenly mb:8
 		.qualification-button fs:$h3 fw:500 cursor:pointer
@@ -209,6 +213,7 @@ global css
 		.qualification-line d:block w:1px h:100% bgc:$color-1 transform:translate(6px, -7px)
 		.qualification-content d:none
 		
+
 		# Services
 		.services-container g:1.5rem gtc: repeat(2, 1fr)
 		.services-content
@@ -226,6 +231,7 @@ global css
 		.services-modal-close pos:absolute t:1rem r:1rem c:$color-1 cursor:pointer
 		.services-modal-icon c:$color-1 mr:1
 		
+
 		# Portfolio
 		.portfolio-container of:initial
 		.portfolio-content p:1.5rem
@@ -233,6 +239,7 @@ global css
 		.portfolio-title fs:$h3 mb:2
 		.portfolio-description mb:3
 		.portfolio-button@hover .button-icon transform:translateX(.25rem)
+
 		.swiper-wrapper h:auto
 		.swiper-button-prev@after, .swiper-button-next@after content:''
 		.swiper-portfolio-icon fs:2rem c:$color-1
@@ -241,7 +248,16 @@ global css
 		.swiper-horizontal > .swiper-pagination-bullets b:-1rem
 		.swiper-pagination-bullet-active bgc:$color-1
 		.swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet outline:none
+
+		.carousel-cell
+			w:100% @960:90% mr:1rem h:auto @768:400px
+			d:flex jc:center ai:center
+		.carousel-cell img
+			d:block max-height:100% max-width:100% rd:12px
+		.tech div fs:$sm-fs px:5 py:3 pt:4 bd:black/12 1px solid rd:10px
+		.description max-width:40rem c:$text-color lh:1.4
 		
+
 		# Project In Mind
 		.project ta:center
 		.project-bg bgc:$color-1 pt:3rem
@@ -250,6 +266,7 @@ global css
 		.project-title, .project-description c:white
 		.project-img w:232px js:center
 		
+
 		# Testimonial
 		.testimonial-data, .testimonial-header d:flex
 		.testimonial-data jc:space-between mb:4
@@ -273,6 +290,7 @@ global css
 		.contact-label
 			fs:$xs-fs c:$title-color
 		
+
 		# Footer
 		.footer pt:2rem
 		.footer-container rg:3.5rem
@@ -281,10 +299,11 @@ global css
 		.footer-subtitle fs:$sm-fs
 		.footer-links d:flex fld:column rg:1.5rem
 		.footer-link c@hover:$color-1-lighter
-		.footer-social fs:1.25rem mr:6 c@hover:$color-1-lighter
+		.footer-socialz fs:1.25rem mr:6 c@hover:$color-1-lighter
 		.footer-copy fs:$xs-fs ta:center c:$text-color-light mt:12
-		.footer-title, .footer-subtitle, .footer-link, .footer-social c:white
+		.footer-title, .footer-subtitle, .footer-link, .footer-socialz c:white
 		
+
 		# Scroll Bar
 		::-webkit-scrollbar w:.6rem bgc:$scroll-bar-color rd:.5rem
 		::-webkit-scrollbar-thumb bgc:$scroll-thumb-color rd:.5rem bgc@hover:$text-color-light
@@ -356,22 +375,28 @@ global css
 			.footer-container gtc:repeat(3,1fr)
 			.footer-bg pt:3rem pb:3.5rem
 			.footer-links fld:row cg:2rem
-			.footer-socials js:flex-end
+			.footer-sociallz js:flex-end
 			.footer-copy mt:4.5rem
 			
-			@1024
-				.header,.main,.footer-container p:0
-				.home-blob w:320px
-				.home-social transform:translateX(-6rem)
-				.services-container gtc:repeat(3, 238px)
-				.portfolio-content cg:5rem
-				.swiper-portfolio-icon fs:3.5rem
-				.swiper-button-prev l:-3.5rem
-				.swiper-button-next r:-3.5rem
-				.swiper-horizontal > .swiper-pagination-bullets b:-4.5rem
-				.contact-form w:460px
-				.contact-inputs gtc:repeat(2, 1fr)
-			
-			@1280
-				.container max-width:1024px
-				.services-container cg:5rem
+		@1024
+			.header,.main,.footer-container p:0
+			.home-blob w:320px
+			.home-social transform:translateX(-6rem)
+			.services-container gtc:repeat(3, 238px)
+			.portfolio-content cg:5rem
+			.swiper-portfolio-icon fs:3.5rem
+			.swiper-button-prev l:-3.5rem
+			.swiper-button-next r:-3.5rem
+			.swiper-horizontal > .swiper-pagination-bullets b:-4.5rem
+			.contact-form w:460px
+			.contact-inputs gtc:repeat(2, 1fr)
+		
+		@1280
+			.container max-width:1024px
+			.services-container cg:5rem
+		
+		.copy pos:relative
+			@before
+				cursor:initial o:0 pos:absolute t:-10 rd:xl shadow:sm px:3 py:2 fs:xs content:"Copied to clipboard!"
+				tween:all .3s
+		.display@before o:1

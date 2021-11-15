@@ -1,5 +1,7 @@
 tag dropdown
-	css .center t:50% l:50% x:-50% y:-50%
+	css .center 
+		t:50% l:50% x:-50% y:-50% h:82.5vh max-height:100% ofy:auto w:968px 
+		max-width:100% bgc:$container-color rd:16px shadow:0 2px 4px black/15 
 	prop auto-close\boolean = true
 	prop placement\"bottom-end"|"bottom-start"|"top-end"|"top-start"
 	isShown?\boolean = false

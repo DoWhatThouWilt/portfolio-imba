@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "flickity": "^2.2.2",
     "imba": "^2.0.0-alpha.146",
     "swiper": "^7.0.8"
   }
