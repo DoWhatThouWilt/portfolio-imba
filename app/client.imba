@@ -21,9 +21,9 @@ tag accordion
 		<div.skills-content .{status!} @click=(open = !open)>	
 			<slot>
 
-tag master
-	<self>
-		<app route='/$'>
+# tag master
+# 	<self>
+# 		<app route='/$'>
 
 tag app
 	swiper
@@ -549,4 +549,4 @@ tag app
 					 href="#home">
 						<i.uil.uil-arrow-up.scrollup-icon[fs:1.5rem c:white]>
 
-imba.mount <master>
+imba.mount <app>
