@@ -5,7 +5,7 @@ import 'swiper/css/pagination'
 import './dropdown'
 import './modal'
 import './styles'
-# import './masonry'
+import './masonry'
 # import './slider'
 import './flickity'
 
