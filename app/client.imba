@@ -180,10 +180,10 @@ tag app
 													165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
 													129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
 													-0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" >
-											<image.home-blob-img[w:225px] x=-5 y=0 href="./placeholder.png" > # x=12 y=18
+											<image.home-blob-img[w:225px] x=-5 y=0 href="./me.png" > # x=12 y=18
 							<div.home-data>
 								<h1.home-title> "I'm Chenaniah"
-								<h3.home-subtitle> "Fullstack developer"
+								<h3.home-subtitle> "Web Developer"
 								<p.home-description> "High level experience in web design and development knowledge, producing quality work."
 								<a.button.button-flex href="#contact"> "Contact me" 
 									<i.uil.uil-message.button-icon>
@@ -205,7 +205,7 @@ tag app
 								"""
 							<div.about-description>
 								"""
-								I have great versitility when it comes to picking up new skills. I learn quickly because I have knowledge of the
+								I have great versatility when it comes to picking up new skills. I learn quickly because I have knowledge of the
 								common foundational concepts shared among programming languages.
 								"""
 							<div.about-buttons>
