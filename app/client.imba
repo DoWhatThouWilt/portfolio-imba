@@ -225,7 +225,7 @@ tag app
 									<i.uil.uil-brackets-curly.skills-icon>
 									<div>
 										<h1.skills-title> "Frontend developer"
-										<span.skills-subtitle> "More than 3 years"
+										<span.skills-subtitle> "More than 5 years"
 									<i.uil.uil-angle-down.skills-arrow>
 								<div[ml:11 mb:2]>
 									"Expertise in HTML, CSS, and Javascript, Experience with the frameworks of
@@ -261,7 +261,7 @@ tag app
 									<i.uil.uil-server-network.skills-icon>
 									<div>
 										<h1.skills-title> "Backend Developer"
-										<span.skills-subtitle> "More than 4 years"
+										<span.skills-subtitle> "More than 2 years"
 									<i.uil.uil-angle-down.skills-arrow>
 								<div[ml:11 mb:2]>
 									"Experience in Elixir, Ruby, Python, PHP. I have worked within the
