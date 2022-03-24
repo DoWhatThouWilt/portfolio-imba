@@ -396,7 +396,8 @@ tag app
 									<p.portfolio-description>
 										"A dynamic form tailored to the needs of moving customers"
 									<modal header=$header>
-										<a.button.button-flex.button-small.portfolio-button> "More Details"
+										<a.button.button-flex.button-small.portfolio-button #leads> "More Details" 
+										# This id tag makes the page land right above the leads section, even though it is not directly on the element
 											<i.uil.uil-arrow-right.button-icon>
 										<div slot="dropdown">
 											<flickity>
@@ -419,7 +420,7 @@ tag app
 														"""
 														The form I created for moving companies is a multi-step process that takes
 														 the necessary customer information and inventory of objects needing moved. 
-														 It would collect this data about where they need their items moved to ensures
+														 It would collect this data about where they need their items moved to ensure
 														  movers will have all required knowledge before performing job smoothly! 
 														"""
 													<p.description>
