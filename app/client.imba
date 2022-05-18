@@ -463,6 +463,8 @@ tag app
 													<div.carousel-cell>
 														<img src="./img/lead-form.gif">
 													<div.carousel-cell>
+														<img src="./img/movermarketing.gif">
+													<div.carousel-cell>
 														<img src="./img/wordpress-1.png">
 													<div.carousel-cell>
 														<img src="./img/formine.png">
