@@ -9,7 +9,7 @@ global css
 		$scroll-bar-color: hsl($hue-color, 12%, 48%)
 		$scroll-thumb-color: hsl($hue-color, 12%, 33%) 
 		$square-color: gray8
-
+		.tech div bd: white/12 1px solid
 	
 	@root[data-theme="light"]
 		$color-1-second: hsl($hue-color, 69%, 61%)	
@@ -235,7 +235,7 @@ global css
 		# Portfolio
 		.portfolio-container of:initial
 		.portfolio-content p:1.5rem
-		.portfolio-img w:256px rd:.5rem js:center
+		.portfolio-img max-height:200px w:256px rd:.5rem js:center
 		.portfolio-title fs:$h3 mb:2
 		.portfolio-description mb:3
 		.portfolio-button@hover .button-icon transform:translateX(.25rem)

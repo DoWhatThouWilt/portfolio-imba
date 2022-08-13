@@ -485,14 +485,89 @@ tag app
 
 							# Portfolio 3
 							<div.portfolio-content.grid>
-								<img.portfolio-img src="./img/todo.png">
+								<img.portfolio-img src="./img/a2_react_city_data.png">
 								<div.portfolio-data>
-									<h3.portfolio-title> "Moving Day Todo-List"
+									<h3.portfolio-title> "City Data Widget"
 									<p.portfolio-description>
-										"A fundamental exercise created with Svelte and Tailwind CSS on the frontend, and a Elixir/Phoenix REST API on the backend with a PostgreSQL database."
-									<a.button.button-flex.button-small.portfolio-button href="https://moving-todo.netlify.app/"> "Demo"
-										<i.uil.uil-arrow-right.button-icon>
-				
+										"A widget for Wordpress and Duda CMS that provides pertinent information about cities, such as demographics and places to eat."
+									<modal header=$header>
+										<a.button.button-flex.button-small.portfolio-button> "More Details"
+											<i.uil.uil-arrow-right.button-icon>
+										<div slot="dropdown">
+											<flickity>
+												<div[py:4 bdb:black/8 1px solid]>
+													<h2[fs:$h1 fw:600 c:$title-color]> "City Data Widget"
+													<p[mt:1 fs:$sm-fs]>
+														"""
+														A widget made for integration with websites built with Duda CMS and Wordpress. The widget provides pertinent and helpful information to the end user for a specified city or locale. 
+														"""
+												<p[tt:uppercase fs:$sm-fs my:4]> "tech"
+												<div[d:flex cg:4].tech> 
+													<div> "Elixir"
+													<div> "Phoenix"
+													<div> "PostgreSQL"
+													<div> "Imba"
+													<div> "React"
+													<div> "Tailwind CSS"
+												<div.carousel[mt:4]>
+													<div.carousel-cell>
+														<img src="./img/a1_duda_city_data.png">
+													<div.carousel-cell>
+														<img src="./img/a2_react_city_data.png">
+													<div.carousel-cell>
+														<img src="./img/a3_city_data_code.png">
+												<div[d:grid rg:4 mt:6]>
+													<p.description>
+														"""
+														The information includes weather, demographics, restaurants, things to do, and school data.
+														The number of certain cards, along with the graphical elements, are customizable in the Duda widget editor. 
+														It supplements city specific pages with search engine friendly data which in turn increases the organic search traffic. 
+														On the back end, the API made in Phoenix fetches data from multiple external APIs containing the demographics and location data. 
+														It formats and caches that data in its database, then exposes it as JSON for consumption by either of the two front end clients. 
+														One was made in React, and the other was in Imba.
+														"""
+												<a.button.button-small[mt:6 px:12 py:2 pt:3 rd:xl] href="https://gitfront.io/r/user-2928217/2401f126eaf321145ac9ac24bb98de28e95b094c/moving-leads-form/"> "Source Code"
+
+							# Portfolio 4
+							<div.portfolio-content.grid>
+								<img.portfolio-img src="./img/multi-translate.png">
+								<div.portfolio-data>
+									<h3.portfolio-title> "Multi-Translator"
+									<p.portfolio-description>
+										"A translation app that has the ability to translate a text into numerous different languages quickly and simultaneously."
+									<modal header=$header>
+										<a.button.button-flex.button-small.portfolio-button> "More Details"
+											<i.uil.uil-arrow-right.button-icon>
+										<div slot="dropdown">
+											<flickity>
+												<div[py:4 bdb:black/8 1px solid]>
+													<h2[fs:$h1 fw:600 c:$title-color]> "Multi-Translator"
+													<p[mt:1 fs:$sm-fs]>
+														"A translation app that has the ability to translate a text into numerous different languages quickly and simultaneously."
+												<p[tt:uppercase fs:$sm-fs my:4]> "tech"
+												<div[d:flex cg:4].tech> 
+													<div> "Elixir"
+													<div> "Phoenix"
+													<div> "Liveview"
+													<div> "Tailwind CSS"
+													<div> "Python"
+												<div.carousel[mt:4]>
+													<div.carousel-cell>
+														<img src="./img/multi-translate.png">
+												<div[d:grid rg:4 mt:6]>
+													<p.description>
+														"""
+														The creation of this tool was motivated by my study of word roots and etymologies, in which I developed the need for a tool
+														that could provide me with comparative translations of English words in many different languages. 
+														"""
+													<p.description>
+														"""
+														Elixir currently does not have any good translation libraries avaliable for it that are robust and actively maintained, but Python does. The Python library was able to hit all publicly avaliable translation services and guarentee a translation, but was synchronous and could only translate one text into another single language at a time.
+														To get around this limitation I took advantage of Elixir's concurrency: I created a pool of Python workers, each inside concurrent Elixir processes, to handle the translation requests asynchronously. The result was simultaneous and fast translation of a word or text into multiple languages all at once. 
+														Phoenix LiveView is utilized for the front end interface. 
+														"""
+												<a.button.button-small[mt:6 px:12 py:2 pt:3 rd:xl] href="https://gitfront.io/r/user-2928217/2401f126eaf321145ac9ac24bb98de28e95b094c/moving-leads-form/"> "Source Code"
+
 				<section.contact.section#contact>
 					<h2.section-title> "Contact Me"
 					<span.section-subtitle> "Get in touch"

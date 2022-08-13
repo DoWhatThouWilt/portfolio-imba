@@ -5,7 +5,7 @@ tag modal
 		bgc:$container-color rd:10px max-width:968px m:50px auto p:20px pos:relative
 		shadow:0 2px 4px black/15
 	prop auto-close\boolean = true
-	prop header\HTMLBodyElement
+	prop header
 	isShown?\boolean = false
 	_placement
 	body = document.querySelector('body')
